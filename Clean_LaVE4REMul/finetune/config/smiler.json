@@ -1,0 +1,149 @@
+{
+    "batch_size":32,
+    "epoch": 5,
+    "seed": 18,
+    "lr": 4e-7,
+    "cuda_index": 0,
+    "model_path": "/data/jwwang/transformer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "warm_up_step": -1,
+    "label2id": "/home/jwwang/URE_multi/annotation/configs/label2id.pkl",
+
+    "template_mapping": {
+        "no_relation": [
+            "{subj} and {obj} are not related"
+        ],
+        "has-edu": [
+            "{subj} played for {obj}.",
+            "{subj} studied in {obj}.",
+            "{subj} graduated from {obj}."
+        ],
+        "has-spouse": [
+            "{subj} is the spouse of {obj}",
+            "{subj} is the wife of {obj}",
+            "{subj} is the husband of {obj}"
+        ],
+        "has-parent": [
+            "{obj} is the parent of {subj}",
+            "{obj} is the mother of {subj}",
+            "{obj} is the father of {subj}",
+            "{subj} is the son of {obj}",
+            "{subj} is the daughter of {obj}"
+        ],
+        "headquarters": [
+            "{subj} is the headquarters in {obj}"
+        ],
+        "won-award": [
+            "{subj} won award of {obj}",
+            "{subj} was awarded {obj}"
+        ],
+        "has-occupation": [
+            "{subj} has an occupation of {obj}",
+            "{subj} was engaged in {obj}"
+        ],
+        "has-child": [
+            "{subj} is the parent of {obj}",
+            "{subj} is the mother of {obj}",
+            "{subj} is the father of {obj}",
+            "{obj} is the son of {subj}",
+            "{obj} is the daughter of {subj}"
+        ],
+        "first-product": [
+            "{subj}'s first product is {obj}",
+            "{subj} released {obj}"
+        ],
+        "has-nationality": [
+            "{obj} is the nationality of {subj}"
+        ],
+        "loc-leader": [
+            "{obj} is the mayor of {subj}"
+        ],
+        "invented-when": [
+            "{subj} was invent in {obj}"
+        ],
+        "has-highest-mountain": [
+            "{obj} is the highest mountain in {subj}"
+        ],
+        "has-author": [
+            "{obj} is the author of {subj}"
+        ],
+        "org-has-founder": [
+            "{subj} was founded by {obj}",
+            "{obj} founded {subj}"
+        ],
+        "has-sibling": [
+            "{subj} and {obj} are siblings",
+            "{subj} is brother of {obj}",
+            "{subj} is sister of {obj}"
+        ],
+        "has-weight": [
+            "{subj} is weighted {obj}"
+        ],
+        "eats": [
+            "{subj} eats {obj}",
+            "{subj} feeds on {obj}"
+        ],
+        "org-has-member": [
+            "{obj} is member of {subj}",
+            "{obj} joined {subj}"
+        ],
+        "has-population": [
+            "{subj} has a population of {obj}"
+        ],
+        "has-length": [
+            "{subj} has a length of {obj}"
+        ],
+        "from-country": [
+            "{subj} was born in {obj}",
+            "{subj} comes from {obj}"
+        ],
+        "has-lifespan": [
+            "{subj} has a life expectancy of {obj}"
+        ],
+        "invented-by": [
+            "{subj} was invented by {obj}"
+        ],
+        "has-genre": [
+            "{subj} belongs to the genre of {obj}"
+        ],
+        "event-year": [
+            "{subj} was introduced in {obj}",
+            "{subj} was established in {obj}",
+            "{subj} happened in {obj}",
+            "{subj} was published in {obj}"
+        ],
+        "has-type": [
+            "{subj} belongs to the type of {obj}"
+        ],
+        "is-member-of": [
+            "{subj} is member of {obj}",
+            "{subj} joined {obj}"
+        ],
+        "movie-has-director": [
+            "{subj} is directed by {obj}"
+        ],
+        "starring": [
+            "{subj} stars {obj}",
+            "{obj} stars {subj}"
+        ],
+        "has-tourist-attraction": [
+            "{obj} is a tourist attraction in {subj}"
+        ],
+        "is-where": [
+            "{subj} is located in {obj}"
+        ],
+        "org-leader": [
+            "{subj} is leaded by {obj}",
+            "The leader of {subj} is {obj}"
+        ],
+        "has-height": [
+            "{subj} is {obj} high",
+            "{subj} has a height of {obj}"
+        ],
+        "post-code": [
+            "The ZIP code of {subj} is {obj}"
+        ],
+        "birth-place": [
+            "{subj} was born in {obj}"
+        ]
+      }
+}

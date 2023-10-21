@@ -1,0 +1,70 @@
+{
+    "batch_size": 6,
+    "epoch": 10,
+    "seed": 18,
+    "lr": 4e-7,
+    "model_path": "/data/transformers/microsoft_deberta-v2-xlarge-mnli",
+    "warm_up_step": -1,
+    "label2id": "/home/jwwang/URE_EAE/annotation/configs/label2id.pkl",
+
+    "template_mapping": {
+        "no_relation": [
+            "{arg} is not an argument of {trg}"
+        ],
+      "Artifact": [
+        "Someone {trg} the {arg}",
+        "{arg} should be moved",
+        "Someone moved {arg}",
+        "Someone bought {arg}",
+        "Someone sold {arg}"
+      ],
+      "Destination": ["Someone {trg_subtype} to {arg}"],
+      "Person": ["{arg} was {trg}"],
+      "Entity": [
+        "{arg} attended the demonstration",
+        "{arg} met someone",
+        "{arg} hired someone",
+        "{arg} fired someone",
+        "{arg} voted in the elections",
+        "{arg} released the defendant",
+        "{arg} was ordered to pay"
+      ],
+      "Place": ["{trg} occurred in {arg}"],
+      "Agent": ["{arg} do something",
+      "{arg} select something.",
+"{arg} carry out something.",
+"{arg} create something.",
+"{arg} give something."
+                ],
+      "Victim": ["{arg} was {trg}"],
+      "Attacker": ["{arg} {trg} a person or organization"],
+      "Origin": ["Someone {trg_subtype} from {arg}"],
+      "Instrument": ["Someone {trg_subtype} with {arg}"],
+      "Target": ["{arg} was {trg_subtype}"],
+      "Vehicle": ["{arg} was used as a vehicle"],
+      "Beneficiary": ["The buyer bought to {arg} something"],
+      "Recipient": ["{arg} received money from someone"],
+      "Giver": ["{arg} gave something to someone"],
+      "Plaintiff": ["{arg} filed suit against someone"],
+      "Defendant": ["{arg} was the defendant"],
+      "Prosecutor": [
+        "{arg} indicted the defendant",
+        "{arg} charged the defendant"
+      ],
+      "Adjudicator": [
+        "{arg} convicted the defendant",
+        "{arg} sentenced the defendant",
+        "{arg} tried the defendant",
+        "{arg} released the defendant",
+        "{arg} acquitted the defendant"
+      ],
+      "Org": [
+        "{arg} organization was launched",
+        "{arg} organization was merged",
+        "{arg} organization declared bankruptcy",
+        "{arg} organization was dissolved"
+      ],
+      "Buyer": ["{arg} bought something"],
+      "Seller": ["{arg} sold something"]
+    }
+}
