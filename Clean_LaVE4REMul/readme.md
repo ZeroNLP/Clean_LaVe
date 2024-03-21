@@ -1,4 +1,4 @@
-# 说明
+# Usage
 ## STEP 1
 annotate test/dev/train set using LaVeEntail(TE)
 ```
