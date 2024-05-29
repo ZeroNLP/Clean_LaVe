@@ -30,3 +30,7 @@ $ pip install -r requirements.txt
     ```
 
 - For conducting Clean-LaVe on these three information extraction task, pls refer to the readme.md file under the corresponding directory.
+
+
+## Dataset
+- We have released a pre-processed dataset on https://huggingface.co/datasets/wjwilliam/Clean_LaVe to ensure reproducibility.
